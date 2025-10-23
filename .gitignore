@@ -8,3 +8,4 @@ fast_car_api/__pycache__/database.cpython-312.pyc
 fast_car_api/__pycache__/models.cpython-312.pyc
 fast_car_api/__pycache__/routers.cpython-312.pyc
 alembic.ini
+cars.db
