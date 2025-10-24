@@ -1,5 +1,4 @@
 .venv
-pyproject.toml
 migrations
 fast_car_api/__init__.py
 fast_car_api/__pycache__/__init__.cpython-312.pyc
@@ -7,5 +6,4 @@ fast_car_api/__pycache__/app.cpython-312.pyc
 fast_car_api/__pycache__/database.cpython-312.pyc
 fast_car_api/__pycache__/models.cpython-312.pyc
 fast_car_api/__pycache__/routers.cpython-312.pyc
-alembic.ini
 cars.db
