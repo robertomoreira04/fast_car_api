@@ -12,4 +12,3 @@ class Car(Base):
     color = Column(String, nullable=True)
     factory_year = Column(Integer, nullable=True)
     description = Column(Text, nullable=True)
-

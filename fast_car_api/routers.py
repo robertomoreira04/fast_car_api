@@ -5,6 +5,7 @@ router = APIRouter(
     tags=['cars'],
 )
 
+
 @router.get('/')
 def list_cars():
     return {
@@ -14,4 +15,3 @@ def list_cars():
             {'id': 3, 'modelo': 'Corolla 2025'},
         ]
     }
-

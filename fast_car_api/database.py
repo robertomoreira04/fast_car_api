@@ -14,8 +14,9 @@ SessionLocal = sessionmaker(
 
 Base = declarative_base()
 
+
 def get_session():
-    session= SessionLocal()
+    session = SessionLocal()
     try:
         yield session
     finally:
