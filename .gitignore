@@ -7,3 +7,4 @@ fast_car_api/__pycache__/database.cpython-312.pyc
 fast_car_api/__pycache__/models.cpython-312.pyc
 fast_car_api/__pycache__/routers.cpython-312.pyc
 cars.db
+fast_car_api/__pycache__/schemas.cpython-312.pyc
