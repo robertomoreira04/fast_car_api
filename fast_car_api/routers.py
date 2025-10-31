@@ -30,7 +30,11 @@ def create_car(car: CarSchema,session: Session = Depends(get_session)):
     response_model=CarList,
     status_code=status.HTTP_200_OK,
 )
-def list_cars(session: Session = Depends(get_session),):
-    query = session.scalars(select(Car))
+def list_cars(
+    session: Session = Depends(get_session),
+    offset: int = 0,
+    limit: int = 100,
+):
+    query = session.scalars(select(Car).offset(offset). limit(limit))
     cars = query.all()
     return {'cars': cars}
