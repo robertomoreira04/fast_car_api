@@ -103,3 +103,21 @@ def patch_car(
     session.commit()
     session.refresh(db_car)
     return db_car
+
+@router.delete(
+    path='/{car_id}',
+    status_code=status.HTTP_204_NO_CONTENT,
+)
+def delete_car(
+    car_id: int,
+    session: Session = Depends(get_session),
+
+):
+    car = session.get(Car, car_id)
+    if not car:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail='Car not found',
+        )
+    session.delete(car)
+    session.commit()
