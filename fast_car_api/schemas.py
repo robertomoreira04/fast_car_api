@@ -9,6 +9,7 @@ class CarSchema(BaseModel):
     model_year: Optional[int] = None
     description: Optional[str] = None
 
+
 class CarPublic(BaseModel):
     id: int
     brand: str
@@ -17,6 +18,16 @@ class CarPublic(BaseModel):
     factory_year: Optional[int] = None
     model_year: Optional[int] = None
     description: Optional[str] = None
+
+
+class CarPartialUpdate(BaseModel):
+    brand: Optional[str] = None
+    model: Optional[str] = None
+    color: Optional[str] = None
+    factory_year: Optional[int] = None
+    model_year: Optional[int] = None
+    description: Optional[str] = None
+
 
 class CarList(BaseModel):
     cars: list[CarPublic]
